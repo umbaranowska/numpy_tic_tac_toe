@@ -74,9 +74,9 @@ def check_who_won(board):
                 board[:, 0].tolist(), board[:, 1].tolist(), board[:, 2].tolist(),
                 board.diagonal().tolist(), np.fliplr(board).diagonal().tolist()]
 
-    if np.any(x == ['x', 'x', 'x'] for x in to_check):
-        return 'congratons x won!'
-    elif np.any(x == ['o', 'o', 'o'] for x in to_check):
-        return 'congratons o won!'
+    if np.any([x == ['x', 'x', 'x'] for x in to_check]):
+        return 'congratulations x won!'
+    elif np.any([x == ['o', 'o', 'o'] for x in to_check]):
+        return 'congratulations o won!'
     else:
         return 'GAME OVER you both lost!'
