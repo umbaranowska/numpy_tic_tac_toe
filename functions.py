@@ -39,7 +39,7 @@ def check_coordinates(board, coordinates):
     if board[coordinates] not in ['x', 'o']:
         return True
     else:
-        print('the is already a mark here, try again!')
+        print('there is already a mark here, try again!')
         return False
 
 def put_item_on_board(board, current_player, coordinates):

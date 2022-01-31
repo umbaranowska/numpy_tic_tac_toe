@@ -14,4 +14,3 @@ while is_game_over(board) == False:
 
 winner = check_who_won(board)
 print(winner)
-
